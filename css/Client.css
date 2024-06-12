@@ -1,0 +1,125 @@
+.Client {
+  overflow: hidden;
+  margin: 60px 0 30px;
+}
+@media (max-width: 798px) {
+  .Client {
+    margin: 40px 0 20px;
+  }
+}
+.Client .Client-inner {
+  padding: 40px 0;
+  gap: 20px;
+}
+.Client .left,
+.Client .right {
+  width: 394px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 798px) {
+  .Client .left,
+  .Client .right {
+    width: 100%;
+  }
+}
+.Client .left {
+  align-items: center;
+}
+.Client .image {
+  width: 384px;
+  height: 384px;
+  background-color: #ead9cf;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 798px) {
+  .Client .image {
+    width: 284px;
+    height: 284px;
+  }
+}
+.Client .image img {
+  height: 100%;
+}
+.Client h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--green);
+}
+@media (min-width: 1024px) {
+  .Client h3 {
+    font-size: 2.25rem !important;
+    line-height: 3.5rem !important;
+  }
+}
+.Client p {
+  color: rgba(22, 49, 53, 0.7019607843);
+  font-weight: 400;
+}
+@media (min-width: 1024px) {
+  .Client p {
+    font-size: 1rem !important;
+    line-height: 1.5rem !important;
+  }
+}
+.Client .testimonial {
+  padding: 20px 0;
+}
+.Client .testimonial .quote {
+  font-size: 1.25rem;
+  color: #555;
+}
+.Client .testimonial .name {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  color: var(--green);
+  margin-top: 10px;
+}
+.Client .testimonial .occupation {
+  font-size: 1rem;
+  color: #777;
+}
+.Client .swiper-slide {
+  width: 100% !important;
+}
+.Client .swiper-button-prev,
+.Client .swiper-button-next {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  border: 1px solid #e5e7eb;
+}
+.Client .swiper-button-prev:after,
+.Client .swiper-button-next:after {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 800;
+}
+.Client .swiper-button-prev {
+  bottom: -4px;
+  left: 0%;
+  background-color: #c5855d;
+}
+.Client .swiper-button-next {
+  bottom: 10px;
+  left: 11%;
+  background-color: #eddace;
+}
+.Client .swiper-button-next:after {
+  color: black;
+}
+.Client .swiper-button-prev.swiper-button-disabled,
+.Client .swiper-button-next.swiper-button-disabled {
+  opacity: 1;
+}

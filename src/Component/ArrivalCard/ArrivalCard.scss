@@ -1,0 +1,70 @@
+.arrival-card {
+  width: 100%;
+  min-height: 178px;
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+  h3 {
+    font-family: "Playfair Display", serif;
+
+    @media (max-width: 789px) {
+      font-size: 0.9rem !important;
+    }
+  }
+  h4 {
+    // color: #0000004d !important;
+    font-size: 0.8rem;
+    @media (max-width: 789px) {
+      font-size: 0.6rem;
+    }
+  }
+  h3,
+  button {
+    font-size: 0.8rem;
+    @media (max-width: 789px) {
+      font-size: 0.6rem;
+    }
+  }
+
+  button {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1px;
+  }
+
+  .image {
+    // background-color: #fff;
+    position: relative;
+    border-radius: 10px;
+    height: 100px;
+    //overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 789px) {
+      height: 100px;
+      // width: 100px;
+      margin-right: 5px;
+    }
+    img {
+      position: absolute;
+      right: -20px;
+      bottom: -25px;
+      height: 145px;
+    }
+  }
+  .price {
+    background-color: #d6c5bb;
+    padding: 5px 15px;
+    font-weight: inherit;
+    border-radius: 50px;
+    font-family: "Playfair Display", serif;
+    span {
+      font-weight: 600;
+    }
+    @media (max-width: 500px) {
+      font-size: 0.9rem !important;
+    }
+  }
+}

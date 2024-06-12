@@ -1,0 +1,57 @@
+.arrivila {
+  margin: 80px 0;
+
+  @media (max-width: 789px) {
+    margin: 45px 0;
+  }
+  h2 {
+    text-align: center;
+    color: var(--green);
+    font-family: "Playfair Display", serif;
+  }
+  .arrivila-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .left,
+    .right {
+      width: calc(50% - 10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 789px) {
+        width: 100%;
+      }
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .right {
+      .arrival-card {
+        height: 376px;
+
+        @media (max-width: 789px) {
+          height: 276px;
+        }
+        img {
+          position: absolute;
+          right: -20px;
+          bottom: -138px;
+          height: 300px;
+          @media (max-width: 789px) {
+            position: absolute;
+            right: -20px;
+            bottom: -87px;
+            height: 250px;
+          }
+          @media (max-width: 500px) {
+            height: 175px;
+          }
+        }
+      }
+    }
+  }
+}

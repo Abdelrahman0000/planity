@@ -1,0 +1,59 @@
+.my-nav {
+  color: var(--green);
+}
+.my-nav .container {
+  padding: 0 !important;
+}
+.my-nav .nav-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.my-nav .nav-title .navbar-toggler {
+  border: none;
+}
+.my-nav .navbar-brand {
+  font-size: 1.75rem;
+  color: var(--green);
+  font-weight: 500;
+  font-family: "Playfair Display", serif;
+}
+.my-nav .nav-link {
+  padding: 0 !important;
+}
+.my-nav .nav-link.active {
+  border-bottom: var(--green) 2px solid;
+}
+.my-nav .sign-btn {
+  padding: 12px 34px;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif !important;
+}
+@media (max-width: 789px) {
+  .my-nav .sign-btn {
+    padding: 5px 25px;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    top: 75px;
+    padding: 40px 108px 40px 30px;
+    /* width: 300px; */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); /* shadow right and bottom */
+    border-radius: 15px;
+  }
+  .nav-link {
+    margin: 8px 0;
+    width: 75px;
+  }
+  .sign-btn {
+    padding: 16px 34px;
+  }
+}
